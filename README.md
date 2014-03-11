@@ -1,7 +1,5 @@
 # Etching
 
-============
-
 Blank Wordpress Theme that's easy to bring in your own markup, stylesheets and scripts to make custom Wordpress sites
 
 ### This is Blank
