@@ -18,12 +18,30 @@ html, body {
     padding: 2rem;
     font: $freight;
     text-align: center;
-    h1 {
-        font-size: 2.5rem;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
+
+}
+h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font: $freight;
+    font-size: 2rem;
+}
+
+
+.full {
+    background: rgba($blue, .875);
+    padding: 1rem 2rem;
+    color: white;
+}
+
+.flexcontents {
+    background: rgba($blue, .75);
+    color: white;
 }

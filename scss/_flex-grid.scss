@@ -1,0 +1,10 @@
+.flexcontents {
+    display: flex;
+    div {
+        padding: 1rem;
+        flex: 1;
+        h3 {
+            text-align: center;
+        }
+    }
+}
