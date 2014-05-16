@@ -1,7 +1,15 @@
 .flexcontents {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex; }
   .flexcontents div {
     padding: 1rem;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
     flex: 1; }
     .flexcontents div h3 {
       text-align: center; }
@@ -18,7 +26,8 @@ h2 {
   font: 600 2.5rem/1 "freight-sans-pro", sans-serif; }
 
 h3 {
-  font: 600 2rem/1 "freight-sans-pro", sans-serif; }
+  font: 600 1.75rem/1 "freight-sans-pro", sans-serif;
+  text-transform: uppercase; }
 
 p {
   font: 400 1.125rem/1.5 "skolar", Georgia, serif;
@@ -27,6 +36,8 @@ p {
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html, body {
@@ -36,7 +47,8 @@ html, body {
   background: #4f9dbb;
   color: white;
   padding: 2rem;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 .full {
   background: rgba(79, 157, 187, 0.875);
@@ -46,3 +58,21 @@ html, body {
 .flexcontents {
   background: rgba(79, 157, 187, 0.75);
   color: white; }
+
+.forkme_banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom: 6rem solid transparent;
+  border-left: 6rem solid transparent;
+  border-right: 6rem solid rgba(255, 255, 255, 0.125);
+  width: 0;
+  height: 0;
+  z-index: 5; }
+  .forkme_banner img {
+    z-index: 10;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: 1rem;
+    margin-left: 3.5rem; }
