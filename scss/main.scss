@@ -1,5 +1,6 @@
 @import "variables";
 @import "flex-grid";
+@import "typography";
 
 * {
 
@@ -10,28 +11,15 @@
 
 html, body {
     background: $offwhite;
+
 }
 
 .header {
     background: $blue;
     color: white;
     padding: 2rem;
-    font: $freight;
     text-align: center;
 
-}
-h1 {
-    font-size: 3rem;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-h2 {
-    font-size: 2.5rem;
-}
-
-h3 {
-    font: $freight;
-    font-size: 2rem;
 }
 
 

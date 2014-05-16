@@ -6,6 +6,23 @@
     .flexcontents div h3 {
       text-align: center; }
 
+body {
+  font-size: 100%; }
+
+h1 {
+  font: 900 3rem/1 "freight-sans-pro", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase; }
+
+h2 {
+  font: 600 2.5rem/1 "freight-sans-pro", sans-serif; }
+
+h3 {
+  font: 600 2rem/1 "freight-sans-pro", sans-serif; }
+
+p {
+  font: 400 1.25rem/1.4 "skolar", Georgia, serif; }
+
 * {
   margin: 0;
   padding: 0;
@@ -18,20 +35,7 @@ html, body {
   background: #4f9dbb;
   color: white;
   padding: 2rem;
-  font: 900 100%/1.4 "freight-sans-pro", sans-serif;
   text-align: center; }
-
-h1 {
-  font-size: 3rem;
-  letter-spacing: 3px;
-  text-transform: uppercase; }
-
-h2 {
-  font-size: 2.5rem; }
-
-h3 {
-  font: 900 100%/1.4 "freight-sans-pro", sans-serif;
-  font-size: 2; }
 
 .full {
   background: rgba(79, 157, 187, 0.875);
