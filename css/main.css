@@ -21,7 +21,8 @@ h3 {
   font: 600 2rem/1 "freight-sans-pro", sans-serif; }
 
 p {
-  font: 400 1.25rem/1.4 "skolar", Georgia, serif; }
+  font: 400 1.125rem/1.5 "skolar", Georgia, serif;
+  max-width: 30rem; }
 
 * {
   margin: 0;
