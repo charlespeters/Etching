@@ -19,7 +19,11 @@ html, body {
     font: $freight;
     text-align: center;
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 1.5rem;
     }
 }
