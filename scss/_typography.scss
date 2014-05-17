@@ -3,20 +3,28 @@ body {
     font-size: 100%;
 }
 
+h1, h2, h3 {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
 h1 {
-    font: 900 3rem/1 $freight;
+    font: 900 3.5rem/1 $freight;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
 h2 {
-    font: 600 2.5rem/1 $freight;
+    font: 600 2rem/1 $freight;
 }
 
 h3 {
     font: 600 1.75rem/1 $freight;
     text-transform: uppercase;
 }
-
+a {
+    text-decoration: none;
+}
 p {
     font: 400 1.125rem/1.5 $skolar;
     max-width: 30rem;

@@ -3,31 +3,59 @@
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
   .flexcontents div {
-    padding: 1rem;
+    padding: 3rem 1rem;
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
+    -webkit-flex: 1 0 15rem;
     -moz-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1; }
+    -ms-flex: 1 0 15rem;
+    flex: 1 0 15rem; }
+    .flexcontents div img {
+      max-width: 8rem;
+      display: block;
+      margin: 0 auto 1rem; }
     .flexcontents div h3 {
       text-align: center; }
 
 body {
   font-size: 100%; }
 
+h1, h2, h3 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
+
 h1 {
-  font: 900 3rem/1 "freight-sans-pro", sans-serif;
+  font: 900 3.5rem/1 "freight-sans-pro", sans-serif;
   letter-spacing: 3px;
   text-transform: uppercase; }
 
 h2 {
-  font: 600 2.5rem/1 "freight-sans-pro", sans-serif; }
+  font: 600 2rem/1 "freight-sans-pro", sans-serif; }
 
 h3 {
   font: 600 1.75rem/1 "freight-sans-pro", sans-serif;
   text-transform: uppercase; }
+
+a {
+  text-decoration: none; }
 
 p {
   font: 400 1.125rem/1.5 "skolar", Georgia, serif;
@@ -41,7 +69,7 @@ p {
   box-sizing: border-box; }
 
 html, body {
-  background: #fdffeb; }
+  background: #fbfbf6; }
 
 .header {
   background: #4f9dbb;
@@ -49,6 +77,8 @@ html, body {
   padding: 2rem;
   text-align: center;
   position: relative; }
+  .header h1 {
+    letter-spacing: 4px; }
 
 .full {
   background: rgba(79, 157, 187, 0.875);
@@ -76,3 +106,16 @@ html, body {
     transform: rotate(45deg);
     margin-top: 1rem;
     margin-left: 3.5rem; }
+
+.githubdownloads {
+  margin-top: 1rem; }
+
+.zip_download_link, .tar_download_link {
+  display: inline-block; }
+  .zip_download_link:hover .download, .tar_download_link:hover .download {
+    fill: #1c81a8; }
+
+svg {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem; }

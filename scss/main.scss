@@ -20,6 +20,9 @@ html, body {
     padding: 2rem;
     text-align: center;
     position: relative;
+    h1 {
+        letter-spacing: 4px;
+    }
 }
 
 
@@ -50,4 +53,22 @@ html, body {
         margin-top: 1rem;
         margin-left: 3.5rem;
     }
+}
+
+
+// SVG
+.githubdownloads {
+    margin-top: 1rem;
+}
+.zip_download_link, .tar_download_link {
+    display: inline-block;
+    &:hover {
+        .download { fill: $darkblue; }
+
+    }
+}
+svg {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
 }

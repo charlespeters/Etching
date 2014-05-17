@@ -1,8 +1,17 @@
 .flexcontents {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
     div {
-        padding: 1rem;
-        flex: 1;
+        padding: 3rem 1rem;
+        flex: 1 0 15rem;
+        img {
+            max-width: 8rem;
+            display: block;
+            margin: 0 auto 1rem;
+        }
         h3 {
             text-align: center;
         }
