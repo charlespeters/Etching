@@ -48,18 +48,23 @@ h1 {
   text-transform: uppercase; }
 
 h2 {
-  font: 600 2rem/1 "freight-sans-pro", sans-serif; }
+  font: 700 3rem/1.4 "freight-sans-pro", sans-serif;
+  color: #1c81a8; }
 
 h3 {
-  font: 600 1.75rem/1 "freight-sans-pro", sans-serif;
-  text-transform: uppercase; }
+  font: 600 2rem/1.4 "freight-sans-pro", sans-serif; }
 
 a {
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   text-decoration: none; }
+  a:hover {
+    color: #1c81a8; }
 
 p {
   font: 400 1.125rem/1.5 "skolar", Georgia, serif;
-  max-width: 30rem; }
+  max-width: 30rem;
+  margin: .25rem 0 .75rem; }
 
 * {
   margin: 0;
@@ -89,6 +94,11 @@ html, body {
   background: rgba(79, 157, 187, 0.75);
   color: white; }
 
+.specifics {
+  background: rgba(79, 157, 187, 0.625);
+  padding: 2rem;
+  color: white; }
+
 .forkme_banner {
   position: absolute;
   top: 0;
@@ -111,7 +121,8 @@ html, body {
   margin-top: 1rem; }
 
 .zip_download_link, .tar_download_link {
-  display: inline-block; }
+  display: inline-block;
+  border: 0px; }
   .zip_download_link:hover .download, .tar_download_link:hover .download {
     fill: #1c81a8; }
 

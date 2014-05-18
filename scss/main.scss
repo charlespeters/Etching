@@ -36,6 +36,11 @@ html, body {
     background: rgba($blue, .75);
     color: white;
 }
+.specifics {
+    background: rgba($blue, .625);
+    padding: 2rem;
+    color: white;
+}
 
 .forkme_banner {
     position: absolute;
@@ -62,6 +67,7 @@ html, body {
 }
 .zip_download_link, .tar_download_link {
     display: inline-block;
+    border: 0px;
     &:hover {
         .download { fill: $darkblue; }
 
