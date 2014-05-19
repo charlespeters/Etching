@@ -21,6 +21,7 @@ html, body {
     position: relative;
     h1 {
         letter-spacing: 4px;
+        margin: 1rem 0;
     }
 }
 
@@ -59,9 +60,9 @@ html, body {
 	border-right: 6rem solid rgba(white, .125);
     width: 0;
     height: 0;
-    z-index: 5;
+    z-index: 998;
     img {
-        z-index: 10;
+        z-index: 999;
         transform:rotate(45deg);
         margin-top: 1rem;
         margin-left: 3.5rem;

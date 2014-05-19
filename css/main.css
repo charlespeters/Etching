@@ -56,7 +56,7 @@ h1 {
   text-transform: uppercase; }
 
 h2 {
-  font: 700 3rem/1.2 "freight-sans-pro", sans-serif;
+  font: 700 3rem/1 "freight-sans-pro", sans-serif;
   color: #1c81a8; }
 
 h3 {
@@ -90,7 +90,8 @@ html, body {
   text-align: center;
   position: relative; }
   .header h1 {
-    letter-spacing: 4px; }
+    letter-spacing: 4px;
+    margin: 1rem 0; }
 
 .full {
   background: rgba(79, 157, 187, 0.875);
@@ -125,9 +126,9 @@ html, body {
   border-right: 6rem solid rgba(255, 255, 255, 0.125);
   width: 0;
   height: 0;
-  z-index: 5; }
+  z-index: 998; }
   .forkme_banner img {
-    z-index: 10;
+    z-index: 999;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
