@@ -20,26 +20,34 @@
   -moz-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start; }
-  .flexcontents div {
+  .flexcontents .module {
     padding: 3rem 1rem;
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 15rem;
     -moz-box-flex: 1;
     -ms-flex: 1 0 15rem;
     flex: 1 0 15rem; }
-    .flexcontents div img {
-      max-width: 8rem;
-      display: block;
-      margin: 0 auto 1rem; }
-    .flexcontents div h3 {
-      text-align: center; }
+
+.module img {
+  max-width: 8rem;
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 100%;
+  border: 0;
+  -webkit-transition: border 400ms linear;
+  transition: border 400ms linear; }
+  .module img:hover {
+    border: 1rem solid rgba(251, 251, 246, 0.5); }
+.module h3 {
+  text-align: center; }
 
 body {
-  font-size: 100%; }
+  font-size: 100%;
+  color: #fbfbf6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 h1, h2, h3 {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
 
 h1 {
@@ -48,21 +56,21 @@ h1 {
   text-transform: uppercase; }
 
 h2 {
-  font: 700 3rem/1.4 "freight-sans-pro", sans-serif;
+  font: 700 3rem/1.2 "freight-sans-pro", sans-serif;
   color: #1c81a8; }
 
 h3 {
   font: 600 2rem/1.4 "freight-sans-pro", sans-serif; }
 
 a {
-  color: white;
+  color: #fbfbf6;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   text-decoration: none; }
   a:hover {
     color: #1c81a8; }
 
 p {
-  font: 400 1.125rem/1.5 "skolar", Georgia, serif;
+  font: 400 1.125rem/1.5 "freight-text-pro", Georgia, serif;
   max-width: 30rem;
   margin: .25rem 0 .75rem; }
 
@@ -78,7 +86,6 @@ html, body {
 
 .header {
   background: #4f9dbb;
-  color: white;
   padding: 2rem;
   text-align: center;
   position: relative; }
@@ -87,17 +94,27 @@ html, body {
 
 .full {
   background: rgba(79, 157, 187, 0.875);
-  padding: 1rem 2rem;
-  color: white; }
+  padding: 2rem 2rem; }
 
 .flexcontents {
-  background: rgba(79, 157, 187, 0.75);
-  color: white; }
+  background: rgba(79, 157, 187, 0.75); }
 
 .specifics {
   background: rgba(79, 157, 187, 0.625);
+  padding: 2rem; }
+
+.thankyou {
+  background: rgba(79, 157, 187, 0.5);
+  padding: 2rem; }
+
+.lastdetails {
+  background: rgba(79, 157, 187, 0.375);
   padding: 2rem;
-  color: white; }
+  color: rgba(79, 157, 187, 0.75); }
+
+.footer {
+  background: #4f9dbb;
+  padding: 2rem; }
 
 .forkme_banner {
   position: absolute;

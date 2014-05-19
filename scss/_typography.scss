@@ -1,11 +1,12 @@
 
 body {
     font-size: 100%;
+    color: $offwhite;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3 {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
 
@@ -15,7 +16,7 @@ h1 {
     text-transform: uppercase;
 }
 h2 {
-    font: 700 3rem/1.4 $freight;
+    font: 700 3rem/1.2 $freight;
     color: $darkblue;
 }
 
@@ -23,7 +24,7 @@ h3 {
     font: 600 2rem/1.4 $freight;
 }
 a {
-    color: white;
+    color: $offwhite;
     border-bottom: 1px solid rgba(white, .5);
     text-decoration: none;
     &:hover {
@@ -31,7 +32,7 @@ a {
     }
 }
 p {
-    font: 400 1.125rem/1.5 $skolar;
+    font: 400 1.125rem/1.5 $freight-text;
     max-width: 30rem;
     margin: .25rem 0 .75rem;
 }

@@ -16,7 +16,6 @@ html, body {
 
 .header {
     background: $blue;
-    color: white;
     padding: 2rem;
     text-align: center;
     position: relative;
@@ -28,20 +27,29 @@ html, body {
 
 .full {
     background: rgba($blue, .875);
-    padding: 1rem 2rem;
-    color: white;
+    padding: 2rem 2rem;
 }
 
 .flexcontents {
     background: rgba($blue, .75);
-    color: white;
 }
 .specifics {
     background: rgba($blue, .625);
     padding: 2rem;
-    color: white;
 }
-
+.thankyou {
+    background: rgba($blue, .5);
+    padding: 2rem;
+}
+.lastdetails {
+    background: rgba($blue, .375);
+    padding: 2rem;
+    color: rgba($blue, .75);
+}
+.footer {
+    background: $blue;
+    padding: 2rem;
+}
 .forkme_banner {
     position: absolute;
     top: 0;

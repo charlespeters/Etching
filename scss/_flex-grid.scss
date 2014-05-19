@@ -4,16 +4,25 @@
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
-    div {
+    .module {
         padding: 3rem 1rem;
         flex: 1 0 15rem;
-        img {
-            max-width: 8rem;
-            display: block;
-            margin: 0 auto 1rem;
+    }
+}
+
+.module {
+    img {
+        max-width: 8rem;
+        display: block;
+        margin: 0 auto 1rem;
+        border-radius: 100%;
+        border: 0;
+        transition: border 400ms linear;
+        &:hover {
+            border: 1rem solid rgba($offwhite, .5);
         }
-        h3 {
-            text-align: center;
-        }
+    }
+    h3 {
+        text-align: center;
     }
 }
