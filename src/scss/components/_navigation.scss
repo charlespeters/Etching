@@ -1,0 +1,12 @@
+.nav {
+    ul {
+        list-style: none inside;
+        li {
+            display: inline-block;
+            margin-right: 1rem;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}

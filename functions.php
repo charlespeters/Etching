@@ -1,5 +1,6 @@
 <?php
 	require_once('inc/enqueue_scripts.php');
+	require_once('inc/enqueue_styles.php');
 	require_once('inc/theme_support.php');
 	require_once('inc/nav_menus.php');
 	require_once('inc/widgets.php');

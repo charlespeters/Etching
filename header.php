@@ -26,8 +26,6 @@
 		         echo ' | page '. $paged; }
     ?>
     </title>
-    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/main.min.css" type="text/css"/>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_head(); ?>
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>

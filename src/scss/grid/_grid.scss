@@ -1,0 +1,40 @@
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem;
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    &--inner {
+        max-width: 68rem;
+        margin: 2rem auto;
+        &::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
+}
+
+$ends: 3,4,6,8,12;
+$gutterSize: 2%;
+@each $end in $ends {
+  @for $i from 1 through $end {
+    $single--column: (100 - (($end - 1)*$gutterSize )) / $end;
+    %col-#{$i}-#{$end} {
+        float: left;
+        width: ($i*$single--column) + (($i - 1)*$gutterSize);
+        @if $i == $end {} @else {
+          margin-right: $gutterSize;
+          &:last-child { margin-right: 0; }
+        }
+        @include respond-to(handhelds) {
+            width: 100%;
+            margin-right: 0;
+            float: none;
+        }
+    }
+  }
+}
