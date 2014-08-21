@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <section class="container">
+    <section class="container--small">
         <?php get_template_part('partials/loop', 'index'); ?>
     </section>
 <?php get_footer(); ?>

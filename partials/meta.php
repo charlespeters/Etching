@@ -1,3 +1,3 @@
 <div class="meta">
-	<em>Posted on:</em> <?php the_time('F jS, Y') ?> <em>by</em> <?php the_author() ?>
+	<?php the_time('F jS, Y') ?> | <?php the_category(' '); ?>
 </div>

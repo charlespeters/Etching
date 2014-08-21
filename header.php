@@ -32,7 +32,11 @@
 </head>
 <body>
 <header class="header">
-    <h1><?php bloginfo('name'); ?></h1>
-    <?php get_template_part('partials/menu', 'primary'); ?>
+	<div class="container--small">
+		<div class="header--logo">
+			<h1><?php bloginfo('name'); ?></h1>
+		</div>
+		<?php get_template_part('partials/menu', 'primary'); ?>
+	</div>
 </header>
 <main id="main" class="site-main" role="main">
