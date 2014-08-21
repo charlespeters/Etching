@@ -34,7 +34,7 @@
 <header class="header">
 	<div class="container--small">
 		<div class="header--logo">
-			<h1><?php bloginfo('name'); ?></h1>
+			<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 		</div>
 		<?php get_template_part('partials/menu', 'primary'); ?>
 	</div>

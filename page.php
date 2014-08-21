@@ -1,8 +1,10 @@
 <?php
-    get_header(); 
-    echo '<section class="wrapper">';
+    <?php
+    /**
+     * @package Etching
+     * @subpackage Page
+     */
+    get_header();
     get_template_part('partials/loop', 'single');
-    get_sidebar();
-    echo '</section>';
     get_footer();
 ?>

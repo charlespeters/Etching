@@ -1,3 +1,9 @@
+<?php
+/**
+ * @package Etching
+ * @subpackage Index
+ */
+
 <?php get_header(); ?>
     <section class="container--small">
         <?php get_template_part('partials/loop', 'index'); ?>
