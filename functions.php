@@ -1,16 +1,9 @@
 <?php
-	
-	// Add RSS links to <head> section
-	add_theme_support( 'automatic-feed-links' );
-	// Load jQuery
-	if ( !is_admin() ) {
-	   wp_deregister_script('jquery');
-	   wp_register_script('jquery', ('//code.jquery.com/jquery-latest.min.js'), false);
-	   wp_register_script('modernizr', ('//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js'), false);
-	   wp_enqueue_script('jquery');
-	   wp_enqueue_script('modernizr');
-	}
-	
+	require_once('inc/enqueue_scripts.php');
+	require_once('inc/theme_support.php');
+	require_once('inc/nav_menus.php');
+	require_once('inc/widgets.php');
+
 	// Clean up the <head>
 	function removeHeadLinks() {
     	remove_action('wp_head', 'rsd_link');
@@ -18,30 +11,12 @@
     }
     add_action('init', 'removeHeadLinks');
     remove_action('wp_head', 'wp_generator');
-    
-    // featured images
-	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 500, 500, true ); // 50 pixels wide by 50 pixels tall, resize mode
 
-	// Primary Navigation
-	if (function_exists('register_nav_menu')) {
-		register_nav_menu( array(
-			'primary' => 'Primary Menu',
-		));
-	}
-	
-	
-    //Widgetized Areas
-    if (function_exists('register_sidebar')) {
-    	register_sidebar(array(
-    		'name' => 'Sidebar Widgets',
-    		'id'   => 'sidebar-widgets',
-    		'description'   => 'These are widgets for the sidebar.',
-    		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-    		'after_widget'  => '</div>',
-    		'before_title'  => '<h3>',
-    		'after_title'   => '</h3>'
-    	));
-    }
+	// Enqueue Livereload for Development
+	if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) {
+		wp_register_script('livereload', 'http://localhost:35729/livereload.js?snipver=1', null, false, true);
+		wp_enqueue_script('livereload');
+}
+
 
 ?>

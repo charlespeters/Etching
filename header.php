@@ -4,7 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <?php if (is_search()) { ?>
-	   <meta name="robots" content="noindex, nofollow" /> 
+	   <meta name="robots" content="noindex, nofollow" />
 	<?php } ?>
     <title>
     <?php
@@ -31,28 +31,6 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_head(); ?>
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        html {
-            font: 400 100%/1.4 "Open Sans", "proxima-nova", "Proxima Nova", sans-serif !important;
-            background: #f6f6f6;
-            color: #333;
-        }
-        a { 
-            text-decoration: none;
-            color: #428bca;
-        }
-        header.header, footer.footer {
-            text-align: center;
-            padding: 1rem 0;
-        }
-        .site-main {
-            max-width: 48rem;
-            margin: 1rem auto;
-        }
-    </style>
 </head>
 <body>
 <header class="header">

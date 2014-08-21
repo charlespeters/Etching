@@ -1,6 +1,6 @@
 <?php
     $args = array(
-			'theme_location'  => 'primary',
+            'theme_location'  => 'footer',
             'container'       => 'nav',
             'container_class' => 'nav',
             'menu_class'      => 'menu',
