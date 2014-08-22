@@ -30,7 +30,7 @@
     <?php wp_head(); ?>
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 </head>
-<body>
+<body  <?php body_class(); ?>>
 <header class="header">
 	<div class="container--small">
 		<div class="header--logo">

@@ -1,8 +1,10 @@
-<?
-    
+<?php
+    /**
+     * @package Etching
+     * @subpackage Archive
+     */
     get_header();
 ?>
-
 <section class="archivelist">
 <?php if ( have_posts() ) : ?>
     <header>
@@ -20,5 +22,5 @@
     </section>
     <?php else : ?>
         Not Found
-    <?php endif; ?>      
+    <?php endif; ?>
 </section>
