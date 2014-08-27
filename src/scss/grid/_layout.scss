@@ -1,0 +1,9 @@
+.main--content {
+    @extend %col-8-12;
+    article {
+        margin-bottom: 2rem;
+        &:last-of-type { margin-bottom: 0; }
+    }
+}
+
+.sidebar { @extend %col-4-12; }

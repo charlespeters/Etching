@@ -1,3 +1,12 @@
 .header {
-    padding: 2rem;
+    padding: 1rem;
+    background: $blue;
+
+    a {
+        color: white;
+        &:hover {
+            opacity: .5;
+        }
+    }
+    margin-bottom: 2rem;
 }

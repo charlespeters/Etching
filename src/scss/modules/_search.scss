@@ -1,0 +1,19 @@
+.search {
+    &--form {
+        label {
+            display: block;
+            color: $blue;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        &::after { @extend %clearfix; }
+    }
+    &--field {
+        @extend %col-8-12;
+    }
+    &--submit {
+        @extend %col-4-12;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}

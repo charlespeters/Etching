@@ -1,19 +1,20 @@
+%clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
 .container {
     max-width: 75rem;
     margin: 0 auto;
     padding: 1rem;
     &::after {
-        content: "";
-        clear: both;
-        display: table;
+        @extend %clearfix;
     }
     &--small {
         max-width: 68rem;
-        margin: 2rem auto;
+        margin: 1rem auto;
         &::after {
-            content: "";
-            clear: both;
-            display: table;
+            @extend %clearfix;
         }
     }
 }
@@ -25,6 +26,7 @@ $gutterSize: 2%;
     $single--column: (100 - (($end - 1)*$gutterSize )) / $end;
     %col-#{$i}-#{$end} {
         float: left;
+        display: block;
         width: ($i*$single--column) + (($i - 1)*$gutterSize);
         @if $i == $end {} @else {
           margin-right: $gutterSize;

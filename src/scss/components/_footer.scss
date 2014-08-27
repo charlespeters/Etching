@@ -1,4 +1,18 @@
 .footer {
     padding: 2rem;
     text-align: center;
+    ul {
+        list-style: none;
+        li {
+            display: inline-block;
+            margin-right: 1.5rem;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+    a {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
 }

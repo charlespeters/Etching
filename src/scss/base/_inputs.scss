@@ -1,0 +1,15 @@
+input, textarea {
+    font: 400 100%/1.4 $sans-serif;
+}
+input[type="text"], input[type="email"], textarea {
+    border: 0;
+    padding: .5rem;
+    border-bottom: 1px solid $blue;
+    background: none;
+    transition: all 500ms linear;
+    color: $text;
+    &:focus {
+        background: $blue;
+        color: white;
+    }
+}

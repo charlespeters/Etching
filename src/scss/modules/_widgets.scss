@@ -1,0 +1,23 @@
+.widget {
+    h3 {
+        color: $blue;
+        font-size: 1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        &::after {
+            content: "";
+            display: block;
+            width: 4rem;
+            height: 1px;
+            background: $blue;
+            margin: .5rem 0;
+        }
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        margin-bottom: .25rem;
+    }
+}

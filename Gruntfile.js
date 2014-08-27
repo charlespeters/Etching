@@ -62,7 +62,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: ['src/scss/*.scss','src/scss/**/*.scss'],
-                tasks: ['sass', 'autoprefixer', 'cssmin'],
+                tasks: ['sass', 'autoprefixer'],
                 options: { livereload: 35729 }
             },
         },
@@ -79,6 +79,6 @@ module.exports = function(grunt) {
 
     // Registered task(s).
     grunt.registerTask('default', ['notify']);
-    grunt.registerTask('build', ['uglify', 'sass', 'autoprefixer', 'cssmin', 'imagemin']);
+    grunt.registerTask('build', ['uglify', 'sass', 'autoprefixer', 'imagemin']);
     grunt.registerTask('dev', ['watch']);
 };

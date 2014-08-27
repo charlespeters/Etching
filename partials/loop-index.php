@@ -10,7 +10,7 @@
 		</section>
 		<footer class="postmetadata">
 			<?php the_tags('Tags: ', ', ', ''); ?>
-			<a href="<?php the_permalink() ?>">Read More &rarr;</a>
+			<a class="readmore" href="<?php the_permalink() ?>">Read More &rarr;</a>
 		</footer>
 	</article>
 <?php endwhile; ?>
