@@ -5,4 +5,4 @@ config.codekit
 .DS_Store
 *.log
 
-build/
+build
