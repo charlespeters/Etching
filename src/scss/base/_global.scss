@@ -9,7 +9,9 @@ html {
   box-sizing: border-box;
 }
 
-
+img, picture {
+    max-width: 100%;
+}
 
 .meta {
     margin: .5rem 0;

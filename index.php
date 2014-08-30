@@ -5,7 +5,7 @@
  */
  get_header(); ?>
     <section class="container--small">
-        <section class="main--content">
+        <section class="content--main">
             <?php get_template_part('partials/loop', 'index'); ?>
         </section>
         <?php get_sidebar(); ?>

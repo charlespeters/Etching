@@ -3,7 +3,9 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-
+p {
+    font-family: $serif;
+}
 a {
     color: $blue;
     transition: all 500ms linear;

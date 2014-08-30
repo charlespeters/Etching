@@ -4,6 +4,11 @@
  * @subpackage Single Post
  */
     get_header();
-    get_template_part('partials/loop', 'single');
-    get_footer();
 ?>
+<section class="container--small">
+    <section class="content--main">
+        <?php get_template_part('partials/loop', 'single'); ?>
+    </section>
+    <?php get_sidebar(); ?>
+</section>
+<?php get_footer(); ?>

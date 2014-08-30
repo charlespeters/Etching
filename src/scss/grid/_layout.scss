@@ -1,8 +1,30 @@
-.main--content {
-    @extend %col-8-12;
-    article {
-        margin-bottom: 2rem;
-        &:last-of-type { margin-bottom: 0; }
+.content {
+    &--main {
+        @extend %col-8-12;
+        article {
+            margin-bottom: 2rem;
+            &:last-of-type { margin-bottom: 0; }
+        }
+        .readmore {
+            margin-top: 1rem;
+            display: block;
+        }
+    }
+    &--navigation {
+        margin-top: 1rem;
+        padding: 1rem .25rem;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        &::after {
+            @extend %clearfix;
+        }
+        .previous {
+            @extend %col-3-12;
+        }
+        .next {
+            @extend %col-3-12;
+            float: right;
+        }
     }
 }
 

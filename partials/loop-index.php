@@ -14,3 +14,7 @@
 		</footer>
 	</article>
 <?php endwhile; ?>
+<nav class="content--navigation">
+	<div class="previous"><?php next_posts_link( '&larr; Older posts' ); ?></div>
+	<div class="next"><?php previous_posts_link( 'Newer posts &rarr;' ); ?></div>
+</nav>
