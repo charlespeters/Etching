@@ -1,0 +1,19 @@
+.btn {
+	width: 100%;
+	padding: .5rem 3rem;
+	max-width: 20rem;
+	margin: .5rem 0;
+	border: 2px solid $orange;
+	border-radius: .25rem;
+	background-image: linear-gradient($orange2, $orange1);
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	transition: all 375ms linear;
+	&:hover {
+		background-image: linear-gradient($orange1, $orange2);
+		color: $darkblue;
+		border-color: $orange1;
+	}
+}

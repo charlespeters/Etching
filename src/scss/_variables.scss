@@ -1,0 +1,16 @@
+$freight: "freight-sans-pro", sans-serif;
+$freight-text: "freight-text-pro", Georgia, serif;
+$sans-serif: 'Gotham SSm A', 'Gotham SSm B', Avenir, Avenir Next, Helvetica Neue, Helvetica, sans-serif;
+$freight: $sans-serif;
+
+
+$blue: #4f9dbb;
+$orange: #ff6441;
+$darkblue: #1c81a8;
+// $orange: mix($blue, $orange, 25%);
+$offwhite: #fbfbf6;
+
+$blue: #62b1b9;
+
+$orange1: mix($orange, $offwhite, 75%);
+$orange2: mix($orange, $offwhite, 100%);
