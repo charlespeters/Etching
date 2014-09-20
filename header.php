@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
@@ -34,7 +34,7 @@
 <header class="header">
 	<div class="container--small">
 		<div class="header--logo">
-			<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+			<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 		</div>
 		<?php get_template_part('partials/menu', 'primary'); ?>
 	</div>

@@ -12,7 +12,7 @@
 				<?php edit_post_link('Edit this entry','','.'); ?>
 	</section><!-- .entry-content -->
 	<footer class="entry-footer">
-		<?php comments_template(); ?>
+		<?php comment_form(); ?>
 	</footer>
 </article><!-- #post-## -->
 <?php endwhile; ?>
