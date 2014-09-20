@@ -1,18 +1,23 @@
 .btn {
   text-align: center;
   padding: .5rem;
+  font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
-  border: 2px solid rgba($dark-blue, .5);
-  border-radius: .625rem;
-  color: $blue;
-  font-size: 1rem;
-  background: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  border: 2px solid $blue;
+  border-radius: .5rem;
+  color: $offwhite;
+  appearance: none;
+  background: $rich-blue;
   transition: background 500ms ease, color 500ms ease;
   display: inline-block;
+  max-width: 15rem;
+  width: 100%;
   &:hover, &:focus {
-    background: $dark-blue;
-    color: $offwhite;
+    background: darken($rich-blue, 12.5%);
   }
   &--red {
       color: $red;
