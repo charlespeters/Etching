@@ -56,8 +56,6 @@
 
 <?php endif; ?>
 
-
-
 <?php endif; // If registration required and not logged in ?>
 </div>
 
