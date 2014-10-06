@@ -1,13 +1,14 @@
 .flexcontents {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
-    .module {
-        padding: 3rem 1rem;
-        flex: 1 0 15rem;
-    }
+/*     display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-content: flex-start;
+align-items: flex-start; */
+
+}
+.module {
+    padding: 2rem 1rem;
+    flex: 1 0 14rem;
 }
 
 .module {
@@ -23,6 +24,24 @@
         }
     }
     h3 {
+        font-size: 1.125rem;
         text-align: center;
     }
+}
+
+.flex {
+  &--container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 48rem;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &--article {
+    margin: .5rem auto;
+  }
 }
