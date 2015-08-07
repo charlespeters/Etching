@@ -1,5 +1,7 @@
 # Etching
 
+__Deprecated: This project is no longer update and might cause security problems to your Wordpress installation.__
+
 Blank Wordpress Theme that's easy to bring in your own markup, stylesheets and scripts to make custom Wordpress sites.
 
 ### Built to Customize
@@ -12,3 +14,5 @@ There's a few stylesheets, barebones functions.php and simple folder of partials
 #### Stylesheets & Scripts
 
 #### Functions.php
+
+
